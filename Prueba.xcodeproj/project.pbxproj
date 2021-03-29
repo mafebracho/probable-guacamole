@@ -14,6 +14,10 @@
 		1A360F21255B0FD900D82580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A360F20255B0FD900D82580 /* Assets.xcassets */; };
 		1A360F24255B0FD900D82580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A360F22255B0FD900D82580 /* LaunchScreen.storyboard */; };
 		1A4343BE2583BFA000CB9E48 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343BD2583BFA000CB9E48 /* ResultViewController.swift */; };
+		1A4343C5258506FA00CB9E48 /* RadioButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343C4258506FA00CB9E48 /* RadioButtonsView.swift */; };
+		1A4343C92585124B00CB9E48 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343C82585124B00CB9E48 /* Goal.swift */; };
+		1A4343CD2587B6B800CB9E48 /* GenderRadioButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343CC2587B6B800CB9E48 /* GenderRadioButtonsView.swift */; };
+		1A4343D02587CE3900CB9E48 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343CF2587CE3900CB9E48 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		1A360F23255B0FD900D82580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A360F25255B0FD900D82580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A4343BD2583BFA000CB9E48 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1A4343C4258506FA00CB9E48 /* RadioButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsView.swift; sourceTree = "<group>"; };
+		1A4343C82585124B00CB9E48 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		1A4343CC2587B6B800CB9E48 /* GenderRadioButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderRadioButtonsView.swift; sourceTree = "<group>"; };
+		1A4343CF2587CE3900CB9E48 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			children = (
 				1A360F17255B0FD700D82580 /* AppDelegate.swift */,
 				1A360F19255B0FD700D82580 /* SceneDelegate.swift */,
+				1A4343C72585123A00CB9E48 /* Model */,
 				1A4343C22583BFE500CB9E48 /* View */,
 				1A4343C02583BFC000CB9E48 /* Controller */,
 				1A360F20255B0FD900D82580 /* Assets.xcassets */,
@@ -82,8 +91,19 @@
 			isa = PBXGroup;
 			children = (
 				1A360F1D255B0FD700D82580 /* Main.storyboard */,
+				1A4343C4258506FA00CB9E48 /* RadioButtonsView.swift */,
+				1A4343CC2587B6B800CB9E48 /* GenderRadioButtonsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1A4343C72585123A00CB9E48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A4343C82585124B00CB9E48 /* Goal.swift */,
+				1A4343CF2587CE3900CB9E48 /* Gender.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A360F1C255B0FD700D82580 /* CalculateViewController.swift in Sources */,
+				1A4343CD2587B6B800CB9E48 /* GenderRadioButtonsView.swift in Sources */,
+				1A4343C5258506FA00CB9E48 /* RadioButtonsView.swift in Sources */,
 				1A360F18255B0FD700D82580 /* AppDelegate.swift in Sources */,
+				1A4343D02587CE3900CB9E48 /* Gender.swift in Sources */,
 				1A360F1A255B0FD700D82580 /* SceneDelegate.swift in Sources */,
+				1A4343C92585124B00CB9E48 /* Goal.swift in Sources */,
 				1A4343BE2583BFA000CB9E48 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

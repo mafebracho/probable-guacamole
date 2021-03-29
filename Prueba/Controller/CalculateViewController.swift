@@ -15,40 +15,33 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var weightSlider: UISlider!
-    @IBOutlet weak var femaleButton: UIButton!
-    @IBOutlet weak var maleButton: UIButton!
-    @IBOutlet weak var weightLossButton: UIButton!
-    @IBOutlet weak var maintainWeightButton: UIButton!
-    @IBOutlet weak var buildMuscleButton: UIButton!
-    
-    var goalButtonValue = ""
-    var genderButtonValue = ""
+    @IBOutlet weak var genderRadioButtonsView: GenderRadioButtonsView!
+    @IBOutlet weak var radioButtonsView: RadioButtonsView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func goalButtonPressed(_ sender: UIButton) {
-        
-
+        radioButtonsView.titles = Goal.allCases.map(\.rawValue)
+        radioButtonsView.layer.cornerRadius = 10
+        radioButtonsView.layer.masksToBounds = true
+        genderRadioButtonsView.layer.cornerRadius = 10
+        genderRadioButtonsView.layer.masksToBounds = true
     }
     
     @IBAction func genderButtonPressed(_ sender: UIButton) {
         
-        let genderButtons:[UIButton:String] = [
-            femaleButton:"Female",
-            maleButton:"Male"
-        ]
-        
-        for (button,value) in genderButtons {
-            if button == sender {
-                genderButtonValue = String(value)
-                button.isSelected = true
-            } else {
-                button.isSelected = false
-            }
-        }
+//        let genderButtons:[UIButton:String] = [
+//            femaleButton:"Female",
+//            maleButton:"Male"
+//        ]
+//        
+//        for (button,value) in genderButtons {
+//            if button == sender {
+//                genderButtonValue = String(value)
+//                button.isSelected = true
+//            } else {
+//                button.isSelected = false
+//            }
+//        }
     }
     
     @IBAction func ageTextFieldChanged(_ sender: UITextField) {
