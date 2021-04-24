@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TinyConstraints
 
 class UserInputCell: UITableViewCell {
     let titleLabel: UILabel = {
@@ -23,6 +24,7 @@ class UserInputCell: UITableViewCell {
     let textView: UITextView = {
         let textView = UITextView()
         textView.font = .preferredFont(forTextStyle: .subheadline)
+        textView.width(55)
         return textView
     }()
     
@@ -33,6 +35,28 @@ class UserInputCell: UITableViewCell {
     }()
     
     @objc private func sliderValueChanged(_ sender: UISlider) {
+        
+    }
+    
+    private func setUp() {
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(slider)
+        contentView.addSubview(textView)
+        contentView.addSubview(unitLabel)
+        
+        titleLabel.topToSuperview(offset: 12)
+        titleLabel.leadingToSuperview(offset: 12)
+        
+        textView.trailingToSuperview(offset: 12)
+        textView.topToBottom(of: titleLabel, offset: 24)
+        
+        unitLabel.trailingToLeading(of: textView, offset: -12)
+        unitLabel.centerY(to: textView)
+        
+        slider.leadingToSuperview(offset: 24)
+        slider.trailingToSuperview(offset: 24)
+        slider.topToBottom(of: unitLabel, offset: 12)
+        slider.bottomToSuperview(offset: -12)
         
     }
 }
