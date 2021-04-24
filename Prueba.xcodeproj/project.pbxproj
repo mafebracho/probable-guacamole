@@ -16,8 +16,9 @@
 		1A4343BE2583BFA000CB9E48 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343BD2583BFA000CB9E48 /* ResultViewController.swift */; };
 		1A4343C5258506FA00CB9E48 /* RadioButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343C4258506FA00CB9E48 /* RadioButtonsView.swift */; };
 		1A4343C92585124B00CB9E48 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343C82585124B00CB9E48 /* Goal.swift */; };
-		1A4343CD2587B6B800CB9E48 /* GenderRadioButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343CC2587B6B800CB9E48 /* GenderRadioButtonsView.swift */; };
 		1A4343D02587CE3900CB9E48 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4343CF2587CE3900CB9E48 /* Gender.swift */; };
+		1AFB66112634533F00BB8D8E /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB66102634533F00BB8D8E /* UserInputViewController.swift */; };
+		1AFB66142634541F00BB8D8E /* UserInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB66132634541F00BB8D8E /* UserInputCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		1A4343BD2583BFA000CB9E48 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		1A4343C4258506FA00CB9E48 /* RadioButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonsView.swift; sourceTree = "<group>"; };
 		1A4343C82585124B00CB9E48 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
-		1A4343CC2587B6B800CB9E48 /* GenderRadioButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderRadioButtonsView.swift; sourceTree = "<group>"; };
 		1A4343CF2587CE3900CB9E48 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		1AFB66102634533F00BB8D8E /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
+		1AFB66132634541F00BB8D8E /* UserInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				1A360F1B255B0FD700D82580 /* CalculateViewController.swift */,
+				1AFB66102634533F00BB8D8E /* UserInputViewController.swift */,
 				1A4343BD2583BFA000CB9E48 /* ResultViewController.swift */,
 			);
 			path = Controller;
@@ -92,7 +95,7 @@
 			children = (
 				1A360F1D255B0FD700D82580 /* Main.storyboard */,
 				1A4343C4258506FA00CB9E48 /* RadioButtonsView.swift */,
-				1A4343CC2587B6B800CB9E48 /* GenderRadioButtonsView.swift */,
+				1AFB66132634541F00BB8D8E /* UserInputCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,12 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A360F1C255B0FD700D82580 /* CalculateViewController.swift in Sources */,
-				1A4343CD2587B6B800CB9E48 /* GenderRadioButtonsView.swift in Sources */,
 				1A4343C5258506FA00CB9E48 /* RadioButtonsView.swift in Sources */,
 				1A360F18255B0FD700D82580 /* AppDelegate.swift in Sources */,
 				1A4343D02587CE3900CB9E48 /* Gender.swift in Sources */,
 				1A360F1A255B0FD700D82580 /* SceneDelegate.swift in Sources */,
 				1A4343C92585124B00CB9E48 /* Goal.swift in Sources */,
+				1AFB66112634533F00BB8D8E /* UserInputViewController.swift in Sources */,
+				1AFB66142634541F00BB8D8E /* UserInputCell.swift in Sources */,
 				1A4343BE2583BFA000CB9E48 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

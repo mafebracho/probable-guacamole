@@ -15,7 +15,7 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var weightSlider: UISlider!
-    @IBOutlet weak var genderRadioButtonsView: GenderRadioButtonsView!
+//    @IBOutlet weak var genderRadioButtonsView: GenderRadioButtonsView!
     @IBOutlet weak var radioButtonsView: RadioButtonsView!
     
     override func viewDidLoad() {
@@ -23,8 +23,8 @@ class CalculateViewController: UIViewController {
         radioButtonsView.titles = Goal.allCases.map(\.rawValue)
         radioButtonsView.layer.cornerRadius = 10
         radioButtonsView.layer.masksToBounds = true
-        genderRadioButtonsView.layer.cornerRadius = 10
-        genderRadioButtonsView.layer.masksToBounds = true
+//        genderRadioButtonsView.layer.cornerRadius = 10
+//        genderRadioButtonsView.layer.masksToBounds = true
     }
     
     @IBAction func genderButtonPressed(_ sender: UIButton) {
